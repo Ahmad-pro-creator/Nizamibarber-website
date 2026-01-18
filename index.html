@@ -1,32 +1,113 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
   <title>Barber Shop</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
-    body { font-family: Arial; margin: 0; background: #f5f5f5; }
-    header { background: #111; color: white; padding: 20px; text-align: center; }
-    section { padding: 20px; }
-    .box { background: white; padding: 15px; margin-bottom: 15px; border-radius: 5px; }
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #f4f4f4;
+      color: #333;
+    }
+    header {
+      background: #111;
+      color: white;
+      padding: 30px;
+      text-align: center;
+    }
+    section {
+      padding: 30px;
+      max-width: 900px;
+      margin: auto;
+    }
+    .services, .contact {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 15px;
+    }
+    .card {
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      text-align: center;
+    }
+    img {
+      width: 100%;
+      border-radius: 8px;
+    }
+    a.button {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 10px 15px;
+      background: #111;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #222;
+      color: white;
+    }
   </style>
 </head>
 <body>
 
 <header>
   <h1>Barber Shop</h1>
-  <p>Professional barber services</p>
+  <p>Professional Haircuts & Beard Styling</p>
 </header>
 
-<section class="box">
-  <h2>Services</h2>
-  <p>Haircut – from 10 AZN</p>
-  <p>Beard trim – from 5 AZN</p>
+<section>
+  <h2>Our Services</h2>
+  <div class="services">
+    <div class="card">
+      <h3>Haircut</h3>
+      <p>Clean and modern haircut</p>
+      <strong>10 AZN</strong>
+    </div>
+    <div class="card">
+      <h3>Beard Trim</h3>
+      <p>Sharp beard styling</p>
+      <strong>5 AZN</strong>
+    </div>
+    <div class="card">
+      <h3>Hair + Beard</h3>
+      <p>Complete grooming</p>
+      <strong>13 AZN</strong>
+    </div>
+  </div>
 </section>
 
-<section class="box">
-  <h2>Contact</h2>
-  <p>Phone: 0XX XXX XX XX</p>
+<section>
+  <h2>Gallery</h2>
+  <img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438" alt="Barber photo">
 </section>
+
+<section>
+  <h2>Contact Us</h2>
+  <div class="contact">
+    <div class="card">
+      <h3>WhatsApp</h3>
+      <a class="button" href="https://wa.me/994XXXXXXXX">Message us</a>
+    </div>
+    <div class="card">
+      <h3>Instagram</h3>
+      <a class="button" href="https://instagram.com/USERNAME">Visit Instagram</a>
+    </div>
+    <div class="card">
+      <h3>Phone</h3>
+      <p>0XX XXX XX XX</p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>📍 Baku, Azerbaijan</p>
+</footer>
 
 </body>
 </html>
